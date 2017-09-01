@@ -1,0 +1,275 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+#header{
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	top: 0px;
+	background-color: #E9EBEE;
+	z-index: 999;
+	box-shadow: 2px 3px 5px #ccc;
+}
+#logo{
+	position: relative;
+	left: 130px;
+	top: 15px;
+	float: left;
+}
+.nav-list{
+	width: 800px;
+	height: 100%;
+	position: relative;
+	left: -150px;
+	float: right;
+}
+.nav-list>li{
+	width: 100px;
+	height: 70px;/*
+	line-height: 70px;
+	overflow: hidden;*/
+	display: table-cell;
+	vertical-align: middle;
+	padding-right: 40px;
+}
+.nav-list>li>a{
+	color: black;
+	font-size: 14px;
+}
+.nav-list>li>a:hover{
+	color: #A7C31E;
+}
+
+#banner{
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
+.banr1,.classic{
+	width: 100%;
+	height: 500px;
+}
+#banr1-1{
+	width: 100%;
+	height: 500px;
+	background-image: url(../imgs/bg1-1.png);
+	background-size: 100% 100%;
+	display: block;
+	margin-top: 75px;
+	position: relative;
+}
+#banr1-2{
+	width: 100%;
+	height: 500px;
+	background-size: 100% 100%;
+	background: radial-gradient(rgb(0,173,239),rgb(0,82,124));
+	display: none;
+	margin-top: 75px;
+	position: relative;
+}
+#banr1-3{
+	width: 100%;
+	height: 500px;
+	background-image: url(../imgs/bg3-1.png);
+	background-size: 100% 100%;
+	display: none;
+	margin-top: 75px;
+	position: relative;
+}
+#banr1-1 img:nth-child(1),#banr1-2 img:nth-child(1){
+	width: 322px;
+	height: 140px;	
+	position: absolute;
+	top: 300px;
+	left: 30px;
+}
+#banr1-3 img:nth-child(1){
+	position: absolute;
+	left: 934px;
+	top: 103px;
+}
+#banr1-1 img{
+	position: absolute;
+	left: 618px;
+	top: 31px;
+}
+#banr1-2 img{
+	position: absolute;
+	left: 578px;
+	top: 18px;
+}
+#banr1-3 img:nth-child(2){
+	width: 691px;
+	height: 479px;
+	position: absolute;
+	top: 2px;
+	left: 7px;
+}
+.video{
+	width: 430px;
+	height: 260px;
+	position: absolute;
+	top: 89px;
+	left: 739px;
+	overflow: hidden;
+}
+video{
+	width: 100%;
+	height: 100%;
+	border: none;
+	object-fit: fill;
+}
+.tab{
+	position: absolute;
+	left: 50%;
+	bottom: 25px;
+	width: 65px;
+	height: 20px;
+	margin-left: -53px;
+	z-index: 2;
+	background-color: #c0c79f;
+	border-radius: 40%;
+	z-index: 3;
+}
+.banr1-tab li{
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	border-radius: 100%;
+	cursor: pointer;
+	background-color: #006597;
+}
+.on{
+	width: 10px;
+	height: 10px;
+	background: transparent;
+	border: 2px solid #9eb737;
+}
+.classic{
+	position: relative;
+	height: 790px;
+	background: url(../imgs/bg.png);
+}
+.classic section,footer section{
+	max-width: 512px;
+	height: 90px;
+	margin: 0 auto;
+	padding-top: 30px;
+	background: url(../imgs/line.png) no-repeat bottom;	
+}
+.classic section img,footer section img{
+	display: block;
+	margin: 0 auto;
+}
+.classic section p,footer section p{
+	font-size: 20px;
+	text-align: center;
+	margin-top: 10px;
+}
+.c-main{
+	width: 85%;
+	height: 550px;
+	margin: 80px auto 10px;
+	overflow: hidden;
+	position: relative;
+}
+.c-main ul li{
+	float: left;
+	width: 190px;
+	height: 320px;
+	position: relative;
+	top: 50%;
+	transform: translate(0,-50%);
+	transition: width .5s,height .5s;
+}
+.c-main ul li.side{
+	width: 240px;
+	height: 400px;
+}
+.c-main ul li.mid{
+	width: 288px;
+	height: 475px;
+}
+.c-main ul li img{
+	height: 100%;
+	width: 100%;
+}
+.c-btn div{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	transform: translate(0,50%);
+	cursor: pointer;
+}
+.c-btn div.left{
+	left: 45px;
+}
+.c-btn div.right{
+	right: 45px;
+}
+.c-tab{
+	position: absolute;
+	left: 50%;
+	bottom: 4%;
+	transform: translate(-50%,0);
+}
+.c-tab ul li{
+	height: 18px;
+	width: 18px;
+	float: left;
+	margin-right: 14px;
+	border-radius: 50%;
+	background: #78abc4;
+	position: relative;
+
+}
+.c-tab ul li.on{
+	border: 2px solid #afc834;
+	width: 16px;
+	height: 16px;
+	background: white;
+}
+footer{
+	width: 100%;
+	height: 450px;
+}
+.friend{
+	width: 80%;
+	margin: 100px auto 0;
+}
+.friend ul li{
+	float: left;
+	margin-left: 130px;
+}
+.btmpage{
+	width: 85%;
+	height: 85px;
+	margin: 0 auto;
+	padding-top: 150px;
+}
+.btmpageborder{
+	width: 100%;
+	
+	border-bottom: 1px solid #ccc;
+}
+.btm-p{
+	width: 700px;
+	height: 100%;
+	margin: 0 auto;
+}
+.btm-p p{
+	float: left;
+	color: #ccc;
+	text-align: center;
+	line-height: 80px;
+	margin-left: 40px;
+}
